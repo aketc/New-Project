@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projo</title>
+</head>
+<body>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 600px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 20px;
+      box-sizing: border-box;
+    }
+    label {
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- Ordered List with Roman Numerals -->
+  <h2>My Roman Numeral List</h2>
+  <ol type="I">
+    <li>Satin</li>
+    <li>Woolen</li>
+    <li>Cotton</li>
+    <li>Silk</li>
+    <li>Polyester</li>
+  </ol>
+
+  <!-- External Image from Pexels -->
+  <h2>Wardrobe</h2>
+  <img src="https://www.pexels.com/photo/elegant-mens-clothing-in-modern-retail-store-31318440/" alt="Nature Image from Pexels" width="600">
+
+  <!-- Table of Contacts -->
+  <h2>Contact List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Baby Jesus</td>
+        <td>004 Israel St</td>
+        <td>+123456789</td>
+        <td>jesus@example.com</td>
+      </tr>
+      <tr>
+        <td>Sophia First</td>
+        <td>456 Disney Rd</td>
+        <td>+987654321</td>
+        <td>Sophia@example.com</td>
+      </tr>
+      <tr>
+        <td>Charlie Charlie</td>
+        <td>789 Nicki Ln</td>
+        <td>+1122334455</td>
+        <td>charlie@example.com</td>
+      </tr>
+      <tr>
+        <td>Dave Otis</td>
+        <td>101 Kisumu Blvd</td>
+        <td>+9988776655</td>
+        <td>Dave@example.com</td>
+      </tr>
+      <tr>
+        <td>Miss Powers</td>
+        <td>202 Mbita Ave</td>
+        <td>+5566778899</td>
+        <td>elon@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Registration Form</h2>
+  <form action="#" method="POST">
+    <!-- Name -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+    <!-- Email -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="e.g. example@mail.com" required />
+
+    <!-- Password -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6" />
+
+    <!-- Date -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <!-- Dropdown -->
+    <label for="country">Select Your Country:</label>
+    <select id="country" name="country" required>
+      <option value="">--Please choose--</option>
+      <option value="kenya">Kenya</option>
+      <option value="nigeria">Nigeria</option>
+      <option value="southafrica">South Africa</option>
+      <option value="ghana">Ghana</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male" required />
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female" required />
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other" required />
+    <label for="other">Other</label><br><br>
+
+    <!-- Checkboxes -->
+    <label>Interests:</label><br>
+    <input type="checkbox" id="coding" name="interests" value="coding" />
+    <label for="coding">Coding</label><br>
+    <input type="checkbox" id="reading" name="interests" value="reading" />
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="travel" name="interests" value="travel" />
+    <label for="travel">Travel</label><br><br>
+
+    <!-- Submit -->
+    <input type="submit" value="Register" />
+  </form>
+
+</body>
+</html>
